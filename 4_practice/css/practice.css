@@ -1,0 +1,122 @@
+@font-face {
+    font-family: strato_c;
+    src: url(../fonts/strato_cesello.woff2);
+}
+
+@font-face {
+    font-family: strato_e;
+    src: url(../fonts/strato_eclisse.woff2);
+}
+
+@font-face {
+    font-family: strato_i;
+    src: url(../fonts/strato_inline.woff2);
+}
+
+@font-face {
+    font-family: strato_r;
+    src: url(../fonts/strato_roman.woff2);
+}
+
+@font-face {
+    font-family: strato_t;
+    src: url(../fonts/strato_tonale.woff2);
+}
+
+@font-face {
+    font-family: 'LeagueMono';
+    src: url(../fonts/LeagueMono.ttf);
+}
+
+@keyframes league{
+    0% { font-variation-settings: "wdth" 30; }
+    100% { font-variation-settings: "wdth" 200; }
+}
+
+.panel {
+    position: absolute;
+    /*background-color: #0A6A56;*/
+    width: 720px;
+    height: 300px;
+    top: 200px;
+    left: 350px;
+    perspective: 20000px;
+    transform-style: preserve-3d;
+    animation: turn 3s alternate infinite;
+    overflow: hidden;
+}
+
+.word {
+    position: absolute;
+    left: -8px;
+    font-size: 150px;
+    text-transform: uppercase;
+}
+
+.strato_r {
+    transform: translateZ(0px);
+    font-family: strato_r;
+    color: #A82B11;
+}
+
+.strato_e {
+    transform: translateZ(50px);
+    font-family: strato_e;
+    color: darkslategray;
+}
+
+.strato_c {
+    transform: translateZ(100px);
+    font-family: strato_c;
+    color: #bd9302;
+}
+
+.strato_t {
+    transform: translateZ(150px);
+    font-family: strato_t;
+    color: #0A6A56;
+}
+
+.strato_i {
+    transform: translateZ(200px);
+    font-family: strato_i;
+    color: darkred;
+}
+
+.one {
+    margin-left: 400px;
+    position: absolute;
+    left: 50px;
+}
+
+.two {
+    margin-left: 450px;
+    position: absolute;
+    left: 120px;
+}
+
+.descrip {
+    font-family: "Brandon Grotesque";
+    color: #bd9302;
+    position: absolute;
+    top: 200px;
+    font-size: 20px;
+}
+
+.price {
+    font-family: LeagueMono;
+    color: #A82B11;
+    top: 150px;
+    position: absolute;
+    font-size: 30px;
+    /*font-variation-settings: "wdth" 30;*/
+    text-rendering: geometricPrecision;
+    animation: league infinite alternate 2s;
+}
+
+
+/*@keyframes turn {*/
+    /*0% { transform: rotateX(0deg) rotateY(0deg); }*/
+    /*30% { transform: rotateX(0deg) rotateY(0deg); }*/
+    /*100% { transform: rotateX(20deg) rotateY(80deg); }*/
+/*}*/
